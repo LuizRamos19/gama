@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Foguete</title>
+   <style>
+ .flex-container {
+ display: flex;
+ flex-wrap: nowrap;
+ background-color: DodgerBlue;
+
+}
+
+.foguete, .class-count {
+
+ background-color: #f1f1f1;
+ width: 500px;
+ height: 500px;
+ margin: 10px;
+ text-align: center;
+ line-height: 75px;
+ font-size: 30px;
+
+}
+
+.foguete{
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   
+}
+
+.flex-container > div .foguete {
+   align-items: flex-end;
+}
+
+.imagem-rocket {
+    margin-bottom: 10px;
+}
+
+   </style>
+
+</head>
+<body>
+
+   <h1>COntagem Regressiva</h1>
+
+
+<div class="flex-container">
+ <div class="class-count">
+       <input type="text" id="count">
+       <label for=""></label>
+       <button type="button" id="btnCount">Contagem</button>
+       <label id="contagemRegressiva"></label>
+ </div>
+ <div class="foguete">
+       <img src="./img/rocket.png" alt="" width="100px" class="imagem-rocket">
+ </div>
+
+</div>
+<script src="./index.js">
+
+   </script>
+</body>
+</html>
