@@ -18,8 +18,9 @@ button.addEventListener("click", function() {
 
 function sendRocket() {
     var position = 0;
+    var maxTop = document.getElementsByClassName("foguete")[0].offsetHeight;
     var timer = setInterval(function() {
-        if (position == 500 - 145) {
+        if (position == maxTop - 145) {
             clearInterval(timer);
             alert("Lançamento concluído")
         } else {
